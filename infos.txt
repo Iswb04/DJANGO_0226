@@ -1,0 +1,39 @@
+Tópico: ->
+Info: °
+
+
+-> O que é Django? - framework web para criação de sites.
+    - Resumindo, uma URL chama uma função Python que devolve a resposta.
+
+(   ° http://localhost:8000/login/
+
+
+    ° from django.http import HttpResponse
+        def login(request):
+        return HttpResponse("Tela de login")
+
+    ° fluxo:
+        Navegador → manda requisição /login/
+        Django → chama login(request)
+        Django → responde "Tela de login"    )
+
+--------------------------------------------------------------------------
+-> Flask vs Django 
+
+° [Flask] é simples e flexível para projetos pequenos e aprendizado.
+    - você monta na mão
+    - Ex: API para app, sistema pequeno
+
+° [Django] é completo e robusto para projetos grandes e produção.
+    - já vem com login, banco, admin, etc.
+    - Ex: E-commerce, sistema web completo
+
+--------------------------------------------------------------------------
+-> python -m venv venv: 
+    ° Esse comando cria um ambiente virtual em Python.
+
+° Um ambiente virtual serve para:
+    - Isolar dependências de cada projeto
+    - Evitar conflito de versões de bibliotecas
+    - Não sujar o Python global do sistema
+    - Reproduzir o mesmo ambiente em outro PC/servidor
