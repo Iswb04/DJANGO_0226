@@ -1,39 +1,60 @@
 Tópico: ->
-Info: °
-
+Info: #
+Importante: @
+______________________________________________________________________
 
 -> O que é Django? - framework web para criação de sites.
     - Resumindo, uma URL chama uma função Python que devolve a resposta.
+    @ para instalar: pip install django
 
-(   ° http://localhost:8000/login/
+(   # exemplo: http://localhost:8000/login/
 
 
-    ° from django.http import HttpResponse
+    # from django.http import HttpResponse
         def login(request):
         return HttpResponse("Tela de login")
 
-    ° fluxo:
+    # fluxo:
         Navegador → manda requisição /login/
         Django → chama login(request)
         Django → responde "Tela de login"    )
 
---------------------------------------------------------------------------
+______________________________________________________________________
+
 -> Flask vs Django 
 
-° [Flask] é simples e flexível para projetos pequenos e aprendizado.
+# [Flask] é simples e flexível para projetos pequenos e aprendizado.
     - você monta na mão
     - Ex: API para app, sistema pequeno
 
-° [Django] é completo e robusto para projetos grandes e produção.
+# [Django] é completo e robusto para projetos grandes e produção.
     - já vem com login, banco, admin, etc.
     - Ex: E-commerce, sistema web completo
 
---------------------------------------------------------------------------
--> python -m venv venv: 
-    ° Esse comando cria um ambiente virtual em Python.
+______________________________________________________________________
 
-° Um ambiente virtual serve para:
+-> python -m venv venv: 
+    - Esse comando cria um ambiente virtual em Python.
+    - VENV: virtual environment
+    - para ativar o venv: .\venv\Scripts\Activate.ps1
+
+
+# Um ambiente virtual serve para:
     - Isolar dependências de cada projeto
     - Evitar conflito de versões de bibliotecas
     - Não sujar o Python global do sistema
     - Reproduzir o mesmo ambiente em outro PC/servidor
+
+@ Remover o restrict do windows para PS1 no Powershell:
+  # Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+______________________________________________________________________
+
+
+@ ordem:
+    - criar pasta: mkdir "nome_da_pasta"
+    - abrir pasta: cd "nome_da_pasta"
+    - adicionar venv dentro da pasta: python -m venv venv
+    - ativar venv: \venv\Scripts\Activate.ps1
+    - instalar django: pip install django
+    - atualizar pip caso precise: pip install pip --update
