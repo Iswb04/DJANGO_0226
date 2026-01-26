@@ -52,9 +52,12 @@ ______________________________________________________________________
 
 
 @ ordem:
+    - instalar o django
     - criar pasta: mkdir "nome_da_pasta"
     - abrir pasta: cd "nome_da_pasta"
     - adicionar venv dentro da pasta: python -m venv venv
     - ativar venv: \venv\Scripts\Activate.ps1
     - instalar django: pip install django
     - atualizar pip caso precise: pip install pip --update
+    - criar projeto: django-admin startproject project .  [o . é a raiz]
+    
