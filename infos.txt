@@ -52,12 +52,24 @@ ______________________________________________________________________
 
 
 @ ordem:
-    - instalar o django
+    - instalar o django na máquina
     - criar pasta: mkdir "nome_da_pasta"
     - abrir pasta: cd "nome_da_pasta"
     - adicionar venv dentro da pasta: python -m venv venv
     - ativar venv: \venv\Scripts\Activate.ps1
     - instalar django: pip install django
     - atualizar pip caso precise: pip install pip --update
-    - criar projeto: django-admin startproject project .  [o . é a raiz]
-    
+    - criar projeto: django-admin startproject project .  
+        > o . é a raiz da pasta
+        # nesse ponto é criado o manage.py
+        # manage.py: arquivo que permite executar todos os 
+        comandos de controle do Django dentro do seu projeto (rodar servidor, 
+        criar apps, migrar banco, criar superusuário, etc.).
+    - ligar servidor local: python manage.py runserver
+        > ctrl C para parar o servidor
+
+
+______________________________________________________________________
+
+@ comandos:
+    - django-admin --help   
