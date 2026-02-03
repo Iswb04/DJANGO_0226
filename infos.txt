@@ -1,20 +1,21 @@
-Tópico: ->
-Info: #
+Tópicos: ->
 Importante: @
+Infos: #
+
 ______________________________________________________________________
 
 -> O que é Django? - framework web para criação de sites.
     - Resumindo, uma URL chama uma função Python que devolve a resposta.
     @ para instalar: pip install django
 
-(   # exemplo: http://localhost:8000/login/
+(   * exemplo: http://localhost:8000/login/
 
 
-    # from django.http import HttpResponse
+    * from django.http import HttpResponse
         def login(request):
         return HttpResponse("Tela de login")
 
-    # fluxo:
+    * fluxo:
         Navegador → manda requisição /login/
         Django → chama login(request)
         Django → responde "Tela de login"    )
@@ -23,11 +24,11 @@ ______________________________________________________________________
 
 -> Flask vs Django 
 
-# [Flask] é simples e flexível para projetos pequenos e aprendizado.
+* [Flask] é simples e flexível para projetos pequenos e aprendizado.
     - você monta na mão
     - Ex: API para app, sistema pequeno
 
-# [Django] é completo e robusto para projetos grandes e produção.
+* [Django] é completo e robusto para projetos grandes e produção.
     - já vem com login, banco, admin, etc.
     - Ex: E-commerce, sistema web completo
 
@@ -39,19 +40,19 @@ ______________________________________________________________________
     - para ativar o venv: .\venv\Scripts\Activate.ps1
 
 
-# Um ambiente virtual serve para:
+@ Um ambiente virtual serve para:
     - Isolar dependências de cada projeto
     - Evitar conflito de versões de bibliotecas
     - Não sujar o Python global do sistema
     - Reproduzir o mesmo ambiente em outro PC/servidor
 
 @ Remover o restrict do windows para PS1 no Powershell:
-  # Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+  * Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 ______________________________________________________________________
 
 
-@ ordem:
+-> ordem para criar um projeto com Django:
     - instalar o django na máquina
     - criar pasta: mkdir "nome_da_pasta"
     - abrir pasta: cd "nome_da_pasta"
@@ -59,17 +60,27 @@ ______________________________________________________________________
     - ativar venv: \venv\Scripts\Activate.ps1
     - instalar django: pip install django
     - atualizar pip caso precise: pip install pip --update
-    - criar projeto: django-admin startproject project .  
-        > o . é a raiz da pasta
-        # nesse ponto é criado o manage.py
-        # manage.py: arquivo que permite executar todos os 
+    - criar projeto: django-admin startproject project . (. é a raiz da pasta)
+        * nesse ponto é criado o manage.py
+        * manage.py: arquivo que permite executar todos os 
         comandos de controle do Django dentro do seu projeto (rodar servidor, 
         criar apps, migrar banco, criar superusuário, etc.).
-    - ligar servidor local: python manage.py runserver
-        > ctrl C para parar o servidor
+        * o que é manage.py? : executar comandos do Django dentro de um projeto.
+
+    @ ligar servidor local: python manage.py runserver
+    > ctrl C para parar o servidor
 
 
 ______________________________________________________________________
 
-@ comandos:
-    - django-admin --help   
+-> comandos:
+    - o que é django-admin? - caixa de ferramentas do Django
+    - django-admin --help : mostra os comandos
+
+
+______________________________________________________________________
+
+# infos adicionais:
+    - http: Hyper Text Transfer Protocolo > protocolo que permite a comunicação
+    entre o navegador e o servidor na internet
+    - http codes: codigos de status (ex: 404 Not Found)
