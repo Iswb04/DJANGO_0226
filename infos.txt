@@ -76,11 +76,12 @@ ______________________________________________________________________
 -> comandos:
     - o que é django-admin? - caixa de ferramentas do Django
     - django-admin --help : mostra os comandos
+    - python manage.py startapp "nome" : cria aplicação
 
 
 ______________________________________________________________________
 
 # infos adicionais:
-    - http: Hyper Text Transfer Protocolo > protocolo que permite a comunicação
+    - http: Hyper Text Transfer Protocol > protocolo que permite a comunicação
     entre o navegador e o servidor na internet
     - http codes: codigos de status (ex: 404 Not Found)

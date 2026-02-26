@@ -10,9 +10,15 @@ from django.http import HttpResponse # resposta para requisição
 # HTTP Request <-> Response
 def my_view(request):
     print("enviado!")
-    return HttpResponse ("quero que o mundo se acabe em crack")
+    return HttpResponse ("ixi")
+
+def home(request):
+    print("enviado!")
+    return HttpResponse ("oxe")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', my_view),
+    path('', home),
 ]
+
